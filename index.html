@@ -19,28 +19,30 @@
 </head>
 
 <body>
-  <h1>Stavelseshuskemaskinen</h1>
-
-  <div class="modal fade" id="recordingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="recordingModalLabel" aria-hidden="true">
+  <div class="modal fade" id="recordingModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
     <div class="modal-dialog">
-      <div class="modal-content bck-danger">
+      <div class="modal-content">
         <div class="modal-body text-center">
-          <div class="spinner-border" role="status"></div>
+          <i class="text-danger fas fa-microphone"></i>
+          <!-- <div class="progress">
+            <div id="recordingModalProgressBar" class="progress-bar bg-danger" role="progressbar" style="width: 0%"></div>
+          </div> -->
         </div>
       </div>
     </div>
   </div>
 
   <div class="container-fluid">
-    <div class="row mb-2">
+    <h1>Stavelseshuskemaskinen</h1>
+
+    <div class="row mb-3">
       <div class="col-3">
         <button type="button" class="btn btn-secondary btn-lg" id="resetButton" onclick="resetButtonOnClick()"><i
             class="fas fa-trash"></i></button>
       </div>
     </div>
 
-    <div class="row mb-2">
+    <div class="row mb-3">
       <div class="col">
         <div class="d-grid">
           <button type="button" class="btn btn-danger btn-lg" id="recordButton0" onclick="recordButtonOnClick(0)"><i

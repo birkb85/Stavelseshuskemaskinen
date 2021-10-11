@@ -2,10 +2,11 @@
 // https://github.com/bryanjenningz/record-audio
 
 class MyMediaRecorder {
-    constructor(callbackOnStop) {
+    constructor(callbackOnStop/*, callbackOnDataAvailable*/) {
         this.mediaRecorder = null;
         this.resetRecording();
         this.recordingIndex = 0;
+        // this.recordingTimeStart = null;
 
         navigator.mediaDevices.getUserMedia({ audio: true })
             .then(stream => {
@@ -13,6 +14,9 @@ class MyMediaRecorder {
 
                 this.mediaRecorder.addEventListener("dataavailable", event => {
                     this.audioChunks.push(event.data);
+                    // TODO BB 2021-10-11. Send tid siden start tilbage.
+                    // this.recordingTimeStart ++;
+                    // callbackOnDataAvailable(this.recordingTimeStart);
                 });
 
                 this.mediaRecorder.addEventListener("stop", () => {
@@ -30,6 +34,7 @@ class MyMediaRecorder {
     startRecording(recordingIndex) {
         this.recordingIndex = recordingIndex;
         this.resetRecording();
+        // this.recordingTimeStart = 10; // TODO BB 2021-10-11. Sæt start tid.
         this.mediaRecorder.start();
     }
 
