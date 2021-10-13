@@ -1,7 +1,6 @@
-let mediaRecorder = new MyMediaRecorder(mediaRecorderCallbackOnStop/*, mediaRecorderCallbackOnDataAvailable*/);
+let mediaRecorder = new MyMediaRecorder(mediaRecorderCallbackOnStop);
 
 let recordingModal = new bootstrap.Modal(document.getElementById('recordingModal'));
-//let recordingModalProgressBar = document.getElementById('recordingModalProgressBar');
 
 let audioUrls = [];
 
@@ -27,11 +26,6 @@ function playButtonsHide() {
 }
 
 playButtonsHide();
-
-// function mediaRecorderCallbackOnDataAvailable(timeSinceStart) {
-//   // TODO BB 2021-10-11. Udregn hvor lang tid der er gået siden start, ud af længden og send procent.
-//   recordingModalProgressBar.style.width = timeSinceStart + "%";
-// }
 
 function mediaRecorderCallbackOnStop(audioUrl, recordingIndex) {
   audioUrls[recordingIndex] = audioUrl;
