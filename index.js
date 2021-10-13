@@ -12,12 +12,36 @@ recordButtons.push(document.getElementById('recordButton0'));
 recordButtons.push(document.getElementById('recordButton1'));
 recordButtons.push(document.getElementById('recordButton2'));
 recordButtons.push(document.getElementById('recordButton3'));
+recordButtons.push(document.getElementById('recordButton4'));
+recordButtons.push(document.getElementById('recordButton5'));
+recordButtons.push(document.getElementById('recordButton6'));
+recordButtons.push(document.getElementById('recordButton7'));
+recordButtons.push(document.getElementById('recordButton8'));
+recordButtons.push(document.getElementById('recordButton9'));
+recordButtons.push(document.getElementById('recordButton10'));
+recordButtons.push(document.getElementById('recordButton11'));
+recordButtons.push(document.getElementById('recordButton12'));
+recordButtons.push(document.getElementById('recordButton13'));
+recordButtons.push(document.getElementById('recordButton14'));
+recordButtons.push(document.getElementById('recordButton15'));
 
 let playButtons = [];
 playButtons.push(document.getElementById('playButton0'));
 playButtons.push(document.getElementById('playButton1'));
 playButtons.push(document.getElementById('playButton2'));
 playButtons.push(document.getElementById('playButton3'));
+playButtons.push(document.getElementById('playButton4'));
+playButtons.push(document.getElementById('playButton5'));
+playButtons.push(document.getElementById('playButton6'));
+playButtons.push(document.getElementById('playButton7'));
+playButtons.push(document.getElementById('playButton8'));
+playButtons.push(document.getElementById('playButton9'));
+playButtons.push(document.getElementById('playButton10'));
+playButtons.push(document.getElementById('playButton11'));
+playButtons.push(document.getElementById('playButton12'));
+playButtons.push(document.getElementById('playButton13'));
+playButtons.push(document.getElementById('playButton14'));
+playButtons.push(document.getElementById('playButton15'));
 
 let modeRecord = true;
 let switchToPlayAfterRecording = false;
@@ -30,12 +54,10 @@ function setModeRecord(switchAfterRecording) {
   switchToPlayButton.classList.remove("d-none");
   switchToRecordButton.classList.add("d-none");
 
-  playButtons.forEach(playButton => {
-    playButton.classList.add("d-none");
-  });
-  recordButtons.forEach(recordButton => {
-    recordButton.classList.remove("d-none");
-  });
+  for (let i = 0; i < recordButtons.length; i++) {
+    playButtons[i].classList.add("d-none");
+    recordButtons[i].classList.remove("d-none");
+  }
 }
 
 function setModePlay() {
@@ -62,6 +84,15 @@ function mediaRecorderCallbackOnStop(audioUrl, recordingIndex) {
 
   if (switchToPlayAfterRecording)
     setModePlay();
+
+  if (recordingIndex == 3)
+    document.getElementById('row2').classList.remove("d-none");
+
+  if (recordingIndex == 7)
+    document.getElementById('row3').classList.remove("d-none");
+
+  if (recordingIndex == 11)
+    document.getElementById('row4').classList.remove("d-none");
 }
 
 function resetButtonOnClick() {
