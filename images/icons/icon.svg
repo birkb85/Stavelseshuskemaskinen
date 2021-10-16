@@ -29,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="33.944405"
+     inkscape:cx="4.9265479"
      inkscape:cy="33.17441"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -58,7 +58,7 @@
      id="layer1"
      transform="translate(0,-601.53333)">
     <rect
-       style="fill:#74c1fd;fill-opacity:1;stroke:none;stroke-width:2.4920001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#0d6efd;fill-opacity:1;stroke:none;stroke-width:2.4920001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1366"
        width="72"
        height="72"
@@ -66,7 +66,7 @@
        y="601.53333" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:38.79502869px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.99999994"
+       style="font-style:normal;font-weight:normal;font-size:38.79502869px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.99999994;"
        x="19.006912"
        y="373.74771"
        id="text1370"
@@ -75,9 +75,9 @@
          id="tspan1368"
          x="19.006912"
          y="373.74771"
-         style="stroke-width:0.99999994">A BE</tspan></text>
+         style="stroke-width:0.99999994;fill:#ffffff;fill-opacity:1;">A BE</tspan></text>
     <circle
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.4920001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2.4920001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1372"
        cx="29"
        cy="637.53333"
