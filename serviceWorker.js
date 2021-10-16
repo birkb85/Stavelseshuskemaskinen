@@ -1,5 +1,6 @@
 const staticCacheName = "static-cache-v1"
 const assets = [
+  "/",
   "index.html",
   "index.js",
   "myMediaRecorder.js",
