@@ -1,9 +1,11 @@
 const staticCacheName = "static-cache-v1"
 const assets = [
-  "/",
-  "/index.html",
-  "/index.js",
-  "/myMediaRecorder.js"
+  "index.html",
+  "index.js",
+  "myMediaRecorder.js",
+  "libraries/bootstrap.bundle.min.js",
+  "libraries/bootstrap.min.css",
+  "libraries/fontawsome.all.min.js"
 ]
 
 self.addEventListener("install", installEvent => {
