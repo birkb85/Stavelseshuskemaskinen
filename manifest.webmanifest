@@ -3,8 +3,8 @@
     "short_name": "Stavelse",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#fdfdfd",
-    "theme_color": "#db4938",
+    "background_color": "#343a40",
+    "theme_color": "#343a40",
     "orientation": "portrait-primary",
     "icons": [
       {
