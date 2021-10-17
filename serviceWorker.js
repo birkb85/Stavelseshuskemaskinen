@@ -7,7 +7,9 @@ const assets = [
   "libraries/bootstrap.bundle.min.js",
   "libraries/bootstrap.min.css",
   "libraries/fontawesome.min.js",
-  "libraries/solid.min.js"
+  "libraries/solid.min.js",
+  "sounds/recording0",
+  "sounds/recording1"
 ]
 
 self.addEventListener("install", installEvent => {
