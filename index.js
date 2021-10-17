@@ -80,10 +80,15 @@ function setModePlay() {
       playButtons[i].classList.remove("d-none");
       recordButtons[i].classList.add("d-none");
     }
+    else
+    {
+      playButtons[i].classList.add("d-none");
+      recordButtons[i].classList.remove("d-none");
+    }
   }
 }
 
-setModeRecord(false);
+setModePlay();
 
 function mediaRecorderCallbackOnStop(audioUrl, recordingIndex) {
   audioUrls[recordingIndex] = audioUrl;

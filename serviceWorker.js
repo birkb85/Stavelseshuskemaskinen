@@ -6,7 +6,8 @@ const assets = [
   "myMediaRecorder.js",
   "libraries/bootstrap.bundle.min.js",
   "libraries/bootstrap.min.css",
-  "libraries/fontawsome.all.min.js"
+  "libraries/fontawesome.min.js",
+  "libraries/solid.min.js"
 ]
 
 self.addEventListener("install", installEvent => {
